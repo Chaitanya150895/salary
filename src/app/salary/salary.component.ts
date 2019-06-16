@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalaryComponent implements OnInit {
 
+  a = 10;
+
   constructor() { }
 
   ngOnInit() {
