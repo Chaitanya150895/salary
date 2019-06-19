@@ -1,25 +1,29 @@
-<div class = "">
+<div class="container">
+	<div class="jumbotron" style="align-self: center"><strong>TO CALCULATE THE SALARY OF AN EMPLOYEE</strong><hr><br>
+
 	<form name="B">
 
-	<strong>Basic Salary: </strong> 
-	<input type="text" name="n1" [(ngModel)]="basic_salary" (change)="calculateSalary()">
-	{{basic_salary}}
-	<br><br>
+		<strong>Basic Salary: </strong>
+		<input type="text" name="n1" [(ngModel)]="basic_salary" (change)="calculateSalary()">
+		
+		<br><br>
 
-	
-	<!-- <p [innerText]="basic_salary * (14/100)"></p> -->
-	<input type="button" onClick="sum()" value="CALCULATE"/><br><br>
-	TA 13% :   <input type="text" name="n2" [value]="ta"><br><br>
-	DA 14% :<input type="text" name="n3" [value]="da"><br><br>
-	HRA 12% :<input type="text" name="n4" [value]="hra"><br><br>
-	CLA 11% :  <input type="text" name="n5" [value]="cla"><br><br>
-	PF 15% : <input type="text" name="n6" [value]="pf"><br><br>
-	INSURANCE (500) : <input type="text" name="n7" [value]="insurance"><br><br>
-	<!-- <strong>Insurance: </strong> <input type="text" name="n7"><br><br> -->
-    Gross Salary:  <input type="text" name="n8" [value]="grossSalary"><br><br>
+		<!-- <p [innerText]="basic_salary * (14/100)"></p> -->
+		<input class="btn-success" type="button" onClick="sum()" value="CALCULATE" />
+		<br><br>
+		TA 13% : <input type="text" name="n2" [value]="ta"><br><br>
+		DA 14% :<input type="text" name="n3" [value]="da"><br><br>
+		HRA 12% :<input type="text" name="n4" [value]="hra"><br><br>
+		CLA 11% : <input type="text" name="n5" [value]="cla"><br><br>
+		PF 15% : <input type="text" name="n6" [value]="pf"><br><br>
+		INSURANCE (500) : <input type="text" name="n7" [value]="insurance"><br><br>
+		<!-- <strong>Insurance: </strong> <input type="text" name="n7"><br><br> -->
+		Gross Salary: <input  type="text" name="n8" [value]="grossSalary"><br><br>
 
-   <hr>
-   <strong>Net Salary: </strong> <input type="text" name="n9" [value]="this.netSalary" ><br><br>
-   <input type = "reset">
+		<hr>
+		<strong>Net Salary: </strong> <input type="text" name="n9" [value]="this.netSalary"><br><br>
+		<input class="btn-info" type="reset">
 
-</form>
+	</form>
+</div>
+</div>
