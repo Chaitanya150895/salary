@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SalaryComponent } from './salary/salary.component';
+import { PageComponent } from './page/page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SalaryComponent
+    SalaryComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
