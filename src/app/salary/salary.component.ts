@@ -33,7 +33,7 @@ export class SalaryComponent implements OnInit {
   this.da = this.basic_salary * 0.14;
   this.hra = this.basic_salary * 0.12;
   this.cla = this.basic_salary  * 0.11;
-  this.insurance = this.basic_salary  * 0 + 500 ;
+  this.insurance = this.basic_salary  - this.basic_salary + 500 ;
   this.pf = this.basic_salary * 0.15;
   
   this.grossSalary = this.ta + this.da + this.hra + this.cla + this.pf + this.bs;

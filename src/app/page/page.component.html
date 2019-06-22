@@ -1,37 +1,68 @@
 <div class="jumbotron text-center">
-  <h1>TO CALCULATE THE SALARY OF AN EMPLOYEE(Using the Bootsrap page)</h1>
-  <strong>TO CALCULATE THE SALARY OF AN EMPLOYEE</strong>
-  <p>We are making the page responsive</p> 
+  <h1>TO CALCULATE THE SALARY OF AN EMPLOYEE</h1>
+  
+  <p>(We are making the page responsive)</p>
 </div>
 
 
 <div class="container">
 
+<form name="B">
+
   <div class="row">
-    <div class="col-sm-6">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-6">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-6">
-      <h3>Column 3</h3> 
-      <p>Lorem ipsum dolor..</p>
-    </div>
-        <div class="col-sm-6">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-6">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-6">
-      <h3>Column 3</h3> 
-      <p>Lorem ipsum dolor..</p>
+    <div class="col-sm-12">
+      <p><strong>Basic Salary: </strong>
+        <input type="text" name="n1" [(ngModel)]="basic_salary" (change)="calculateSalary()">
+        <br><br>
+        <input class="btn-success" type="button" onClick="sum()" value="CALCULATE" />
+      </p>
     </div>
   </div>
 
-</div>
+  <hr>
+
+  <div class="row">
+
+    <div class="col-sm-2">
+      <p>TA 13% : <input type="text" name="n2" [value]="ta"></p>
+    </div>
+
+    <div class="col-sm-2">
+      <p> DA 14% :<input type="text" name="n3" [value]="da"></p>
+    </div>
+
+    <div class="col-sm-2">
+      <p>HRA 12% :<input type="text" name="n4" [value]="hra"></p>
+    </div>
+
+    <div class="col-sm-2">
+      <p>PF 15% : <input type="text" name="n6" [value]="pf"></p>
+    </div>
+
+    <div class="col-sm-2">
+      <p> INSURANCE (500) : <input type="text" name="n7" [value]="insurance"></p>
+    </div>
+
+    <div class="col-sm-2">
+      <p>Gross Salary: <input type="text" name="n8" [value]="grossSalary"></p>
+    </div>
+
+  </div>
+
+<hr>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p><strong>Net Salary: </strong> <input type="text" name="n9" [value]="this.netSalary">
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p><input class="btn-info" type="reset"></p>
+    </div>
+  </div>
+
+</form>
