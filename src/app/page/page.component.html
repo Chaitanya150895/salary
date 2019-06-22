@@ -1,68 +1,514 @@
-<div class="jumbotron text-center">
-  <h1>TO CALCULATE THE SALARY OF AN EMPLOYEE</h1>
-  
-  <p>(We are making the page responsive)</p>
-</div>
-
-
+<!-- <div class="fluid-container"> -->
 <div class="container">
 
-<form name="B">
+  <div class="row">
+
+    <div class="col-sm-2">
+      <h1>Highlight Text</h1>
+      <p>Use the mark element to <mark>highlight</mark> text.</p>
+    </div>
+
+    <div class="col-sm-2">
+      <h1>Abbreviations</h1>
+      <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    </div>
+
+    <div class="col-sm-2">
+      <h1>Blockquotes</h1>
+      <p>The blockquote element is used to present content from another source:</p>
+      <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+          globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+    </div>
+
+    <div class="col-sm-2">
+
+      <h1>Blockquotes</h1>
+      <p>To show the quote on the right use the class .blockquote-reverse:</p>
+      <blockquote class="blockquote-reverse">
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+          WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+          globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+
+    </div>
+
+    <div class="col-sm-2">
+
+      <h1>Description Lists</h1>
+      <p>The dl element indicates a description list:</p>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+    </div>
+
+    <div class="col-sm-2">
+      <h1>Code Snippets</h1>
+      <p>Inline snippets of code should be embedded in the code element:</p>
+      <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in
+        a document.</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-2">
+      <h1>Keyboard Inputs</h1>
+      <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+      <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+    </div>
+
+
+    <div class="col-sm-2">
+      <h1>Multiple Code Lines</h1>
+      <p>For multiple lines of code, use the pre element:</p>
+      <pre class="pre-scrollable">
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both spaces and
+        line breaks.
+      </pre>
+    </div>
+
+    <div class="col-sm-2">
+      <h2>Contextual Colors</h2>
+      <p>Use the contextual classes to provide "meaning through colors":</p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+    </div>
+
+    <div class="col-sm-2">
+      <h2>Contextual Backgrounds</h2>
+      <p>Use the contextual background classes to provide "meaning through colors":</p>
+      <p class="bg-primary">This text is important.</p>
+      <p class="bg-success">This text indicates success.</p>
+      <p class="bg-info">This text represents some information.</p>
+      <p class="bg-warning">This text represents a warning.</p>
+      <p class="bg-danger">This text represents danger.</p>
+    </div>
+
+    <div class="col-sm-2">
+      <h2>Typography</h2>
+      <p>The class .list-inline places all list items on a single line:</p>
+      <ul class="list-inline">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-2">
+      <h2>Typography</h2>
+      <p>Use the .lead class to make a paragraph "stand out":</p>
+      <p class="lead">This paragraph stands out.</p>
+      <p>This is a regular paragraph.</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="row">
+
+        <h2>Basic Table</h2>
+        <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="row">
+
+        <h2>Striped Rows</h2>
+        <p>The .table-striped class adds zebra-stripes to a table:</p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-4">
+      <h2>Bordered Table</h2>
+      <p>The .table-bordered class adds borders to a table:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+
+      <h2>Hover Rows</h2>
+      <p>The .table-hover class enables a hover state on table rows:</p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="col-sm-4">
+      <h2>Condensed Table</h2>
+      <p>The .table-condensed class makes a table more compact by cutting cell padding in half:</p>
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="col-sm-4">
+
+      <h2>Contextual Classes</h2>
+      <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active,
+        .success, .info, .warning, and .danger.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+          </tr>
+          <tr class="success">
+            <td>Success</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr class="danger">
+            <td>Danger</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr class="info">
+            <td>Info</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+          <tr class="warning">
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+          </tr>
+          <tr class="active">
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-12">
+      <h2>Table</h2>
+      <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under
+        768px). When viewing on anything larger than 768px wide, there is no difference:</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>City</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Stacy</td>
+              <td>Grace</td>
+              <td>25</td>
+              <td>Mahatten</td>
+              <td>UkA</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Will</td>
+              <td>turner</td>
+              <td>33</td>
+              <td>Boston</td>
+              <td>GB/td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <h2>Rounded Corners</h2>
+      <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>
+      <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304"
+        height="236">
+
+    </div>
+
+    <div class="col-sm-4">
+      <h2>Circle</h2>
+      <p>The .img-circle class adds rounded corners to an image (not available in IE8):</p>
+      <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304"
+        height="236">
+    </div>
+
+    <div class="col-sm-4">
+
+      <h2>Thumbnail</h2>
+      <p>The .img-thumbnail class creates a thumbnail of the image:</p>
+      <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre"
+        width="304" height="236">
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <h2>Image</h2>
+        <p>The .img-responsive class makes the image scale nicely to the parent element (resize the browser window to
+          see the effect):</p>
+        <img class="img-responsive" src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" alt="Chania" width="460"
+          height="345">
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg">
+          <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg">
+          <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg">
+          <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-sm-12">
-      <p><strong>Basic Salary: </strong>
-        <input type="text" name="n1" [(ngModel)]="basic_salary" (change)="calculateSalary()">
-        <br><br>
-        <input class="btn-success" type="button" onClick="sum()" value="CALCULATE" />
-      </p>
+
+      <h2>Responsive Embed</h2>
+      <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
+
     </div>
   </div>
-
-  <hr>
 
   <div class="row">
+    <div class="col-sm-6">
 
-    <div class="col-sm-2">
-      <p>TA 13% : <input type="text" name="n2" [value]="ta"></p>
+      <div class="jumbotron">
+        <h1>Bootstrap Tutorial</h1>
+        <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+          responsive, mobile-first projects on the web.</p>
+      </div>
+      <p>This is some text.</p>
+      <p>This is another text.</p>
     </div>
 
-    <div class="col-sm-2">
-      <p> DA 14% :<input type="text" name="n3" [value]="da"></p>
-    </div>
-
-    <div class="col-sm-2">
-      <p>HRA 12% :<input type="text" name="n4" [value]="hra"></p>
-    </div>
-
-    <div class="col-sm-2">
-      <p>PF 15% : <input type="text" name="n6" [value]="pf"></p>
-    </div>
-
-    <div class="col-sm-2">
-      <p> INSURANCE (500) : <input type="text" name="n7" [value]="insurance"></p>
-    </div>
-
-    <div class="col-sm-2">
-      <p>Gross Salary: <input type="text" name="n8" [value]="grossSalary"></p>
-    </div>
-
-  </div>
-
-<hr>
-
-  <div class="row">
-    <div class="col-sm-12">
-      <p><strong>Net Salary: </strong> <input type="text" name="n9" [value]="this.netSalary">
-    </div>
-
-  </div>
 
 
-  <div class="row">
-    <div class="col-sm-12">
-      <p><input class="btn-info" type="reset"></p>
+
+    <div class="col-sm-6">
+
+      <div class="page-header">
+        <h1>Example Page Header</h1>
+      </div>
+      <p>This is some text.</p>
+      <p>This is another text.</p>
+
     </div>
   </div>
 
-</form>
+</div>
